@@ -1,5 +1,5 @@
 //
-//  Model.swift
+//  Settings.swift
 //  Crab
 //
 //  Created by Ilgar Ilyasov on 1/9/19.
@@ -8,8 +8,9 @@
 
 import Foundation
 
-class Model {
-    static let shared = Model()
+class Settings {
+    
+    static let shared = Settings()
     private init() {}
     
     var shouldRoll = false
