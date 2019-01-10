@@ -52,10 +52,24 @@
                     <view key="view" contentMode="scaleToFill" id="OxH-4R-qrs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <skView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1LP-Bp-aMu">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            </skView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1LP-Bp-aMu" firstAttribute="leading" secondItem="66i-p4-fdh" secondAttribute="leading" id="A5M-1b-j50"/>
+                            <constraint firstItem="66i-p4-fdh" firstAttribute="trailing" secondItem="1LP-Bp-aMu" secondAttribute="trailing" id="Lcf-6g-gWP"/>
+                            <constraint firstItem="66i-p4-fdh" firstAttribute="bottom" secondItem="1LP-Bp-aMu" secondAttribute="bottom" id="VM0-nu-hZa"/>
+                            <constraint firstItem="1LP-Bp-aMu" firstAttribute="top" secondItem="66i-p4-fdh" secondAttribute="top" id="dwp-0v-WzD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="66i-p4-fdh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Play" image="game_controller" id="hpQ-Os-30t"/>
+                    <connections>
+                        <outlet property="skview" destination="1LP-Bp-aMu" id="l8u-b3-QLu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIb-H0-R5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
